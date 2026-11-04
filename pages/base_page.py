@@ -1,4 +1,5 @@
 from playwright.sync_api import Page, expect, Locator, TimeoutError as PlaywrightTimeoutError
+import re
 
 DEFAULT_TIMEOUT = 5_000
 
@@ -6,9 +7,9 @@ class BasePage:
     def __init__(self, page: Page):
         self.page = page
 
-    def is_url_contains(self, text: str) -> bool:
+    def is_url_contains(self, text: str, timeout:int = DEFAULT_TIMEOUT) -> bool:
         try:
-            expect(self.page.url).contains(text)
+            expect(self.page).to_have_url(re.compile(re.escape(text)), timeout=timeout)
             return True
         except AssertionError:
             print(f"AssertionError: {text}")
