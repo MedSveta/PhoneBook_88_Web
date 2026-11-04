@@ -20,3 +20,6 @@ class LoginPage(BasePage):
     def click_btn_registration(self) -> None:
         self.btn_registration.click()
 
+    def click_btn_login_and_get_alert(self) -> str:
+        return self.click_and_get_alert_text(self.btn_login)
+
