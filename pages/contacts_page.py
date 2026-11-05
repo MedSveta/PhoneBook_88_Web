@@ -13,3 +13,6 @@ class ContactsPage(BasePage):
 
     def validate_text_in_no_contact_message(self, text: str) -> bool:
         return self.is_text_in_element_present(self.no_contact_message, text)
+
+    def click_link_add(self):
+        self.link_add.click()

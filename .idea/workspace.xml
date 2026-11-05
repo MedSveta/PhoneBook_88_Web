@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="075c5cc0-4f1e-4c60-88e9-1caf884c85bc" name="Changes" comment="Login Tests">
-      <change afterPath="$PROJECT_DIR$/models/contact.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_registration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/factory.py" afterDir="false" />
+    <list default="true" id="075c5cc0-4f1e-4c60-88e9-1caf884c85bc" name="Changes" comment="Registration tests">
+      <change afterPath="$PROJECT_DIR$/data/wrong_email_password.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/add_contact_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_add_new_contact.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/data_reader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/contacts_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contacts_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_registration.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for tests.test_add_new_contact.test_add_new_contact_positive.executor": "Run",
     "Python tests.Python tests for tests.test_login.test_login_negative_all_fields_empty.executor": "Run",
+    "Python tests.Python tests for tests.test_registration.test_registration_negative_all_fields_empty.executor": "Run",
+    "Python tests.Python tests for tests.test_registration.test_registration_negative_wrong_email_or_password.executor": "Run",
     "Python tests.Python tests for tests.test_registration.test_registration_positive.executor": "Run",
     "Python tests.Python tests in test_login.py.executor": "Run",
     "Python tests.Python tests in test_smoke.py.executor": "Run",
@@ -65,18 +69,34 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/MyPythonProjects/PhoneBook_88_Web/models",
+    "last_opened_file_path": "C:/MyPythonProjects/PhoneBook_88_Web/data",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyPythonProjects\PhoneBook_88_Web\data" />
       <recent name="C:\MyPythonProjects\PhoneBook_88_Web\models" />
       <recent name="C:\MyPythonProjects\PhoneBook_88_Web\utils" />
       <recent name="C:\MyPythonProjects\PhoneBook_88_Web" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.test_registration.test_registration_positive">
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_add_new_contact.test_add_new_contact_positive">
+    <configuration name="Python tests for tests.test_add_new_contact.test_add_new_contact_positive" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PhoneBook_88_Web" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_add_new_contact.test_add_new_contact_positive&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for tests.test_login.test_login_negative_all_fields_empty" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PhoneBook_88_Web" />
       <option name="ENV_FILES" value="" />
@@ -89,6 +109,36 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;tests.test_login.test_login_negative_all_fields_empty&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_registration.test_registration_negative_all_fields_empty" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PhoneBook_88_Web" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_registration.test_registration_negative_all_fields_empty&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_registration.test_registration_negative_wrong_email_or_password" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PhoneBook_88_Web" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_registration.test_registration_negative_wrong_email_or_password&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -107,42 +157,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_login.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PhoneBook_88_Web" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_login.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_smoke.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PhoneBook_88_Web" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_smoke.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for tests.test_add_new_contact.test_add_new_contact_positive" />
+        <item itemvalue="Python tests.Python tests for tests.test_registration.test_registration_negative_wrong_email_or_password" />
+        <item itemvalue="Python tests.Python tests for tests.test_registration.test_registration_negative_all_fields_empty" />
         <item itemvalue="Python tests.Python tests for tests.test_registration.test_registration_positive" />
         <item itemvalue="Python tests.Python tests for tests.test_login.test_login_negative_all_fields_empty" />
-        <item itemvalue="Python tests.Python tests in test_login.py" />
-        <item itemvalue="Python tests.Python tests in test_smoke.py" />
       </list>
     </recent_temporary>
   </component>
@@ -193,12 +214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1793773608693</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Registration tests">
+      <option name="closed" value="true" />
+      <created>1793787106889</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1793787106889</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start Project" />
     <MESSAGE value="Login Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login Tests" />
+    <MESSAGE value="Registration tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Registration tests" />
   </component>
 </project>
