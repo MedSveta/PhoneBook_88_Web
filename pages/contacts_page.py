@@ -1,5 +1,5 @@
 from pages.base_page import BasePage
-from playwright.sync_api import Page
+from playwright.sync_api import Page, expect
 
 
 class ContactsPage(BasePage):
@@ -9,7 +9,7 @@ class ContactsPage(BasePage):
         self.no_contact_message = page.locator("h1", has_text=" No Contacts here!")
         self.list_contacts = page.locator(".contact-item_card__2SOIM")
         self.last_contact = self.list_contacts.last.locator("h3")
-        print(self.last_contact.inner_text())
+
 
     def is_link_add_present(self) -> bool:
         return self.is_element_visible(self.link_add)
@@ -25,3 +25,15 @@ class ContactsPage(BasePage):
 
     def count_contacts(self) -> int:
         return self.list_contacts.count()
+
+    def wait_count_of_contacts(self, expected: int, timeout: int = 10_000) -> int:
+        """Ждём, пока число контактов станет равным expected (или истечёт таймаут)."""
+        try:
+            expect(self.list_contacts).to_have_count(expected, timeout=timeout)
+        except AssertionError:
+            pass
+        return self.count_contacts()
+
+
+    def get_text_from_last_contact(self) -> str:
+        return self.last_contact.inner_text()

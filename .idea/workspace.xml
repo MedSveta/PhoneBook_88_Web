@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="075c5cc0-4f1e-4c60-88e9-1caf884c85bc" name="Changes" comment="Add Tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands_for_terminal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/commands_for_terminal.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/add_contact_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/add_contact_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/contacts_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contacts_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_add_new_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_add_new_contact.py" afterDir="false" />
     </list>
@@ -49,27 +47,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for tests.test_add_new_contact.test_add_new_contact_positive.executor": "Run",
-    "Python tests.Python tests for tests.test_add_new_contact.test_add_new_contact_positive_check_last_contact.executor": "Run",
-    "Python tests.Python tests for tests.test_login.test_login_negative_all_fields_empty.executor": "Run",
-    "Python tests.Python tests for tests.test_registration.test_registration_negative_all_fields_empty.executor": "Run",
-    "Python tests.Python tests for tests.test_registration.test_registration_negative_wrong_email_or_password.executor": "Run",
-    "Python tests.Python tests for tests.test_registration.test_registration_positive.executor": "Run",
-    "Python tests.Python tests in test_login.py.executor": "Run",
-    "Python tests.Python tests in test_smoke.py.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/MyPythonProjects/PhoneBook_88_Web/data",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for tests.test_add_new_contact.test_add_new_contact_positive.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_add_new_contact.test_add_new_contact_positive_check_last_contact.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_login.test_login_negative_all_fields_empty.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_registration.test_registration_negative_all_fields_empty.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_registration.test_registration_negative_wrong_email_or_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.test_registration.test_registration_positive.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_login.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_smoke.py.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/MyPythonProjects/PhoneBook_88_Web/data&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\MyPythonProjects\PhoneBook_88_Web\data" />
@@ -227,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793874646829</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add Tests">
+      <option name="closed" value="true" />
+      <created>1793962125403</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1793962125403</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
