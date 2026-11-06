@@ -7,6 +7,9 @@ class ContactsPage(BasePage):
         super().__init__(page)
         self.link_add = page.locator("a[href='/add']")
         self.no_contact_message = page.locator("h1", has_text=" No Contacts here!")
+        self.list_contacts = page.locator(".contact-item_card__2SOIM")
+        self.last_contact = self.list_contacts.last.locator("h3")
+        print(self.last_contact.inner_text())
 
     def is_link_add_present(self) -> bool:
         return self.is_element_visible(self.link_add)
@@ -14,5 +17,11 @@ class ContactsPage(BasePage):
     def validate_text_in_no_contact_message(self, text: str) -> bool:
         return self.is_text_in_element_present(self.no_contact_message, text)
 
+    def validate_text_in_last_contacts(self, text: str) -> bool:
+        return self.is_text_in_element_present(self.last_contact, text)
+
     def click_link_add(self):
         self.link_add.click()
+
+    def count_contacts(self) -> int:
+        return self.list_contacts.count()

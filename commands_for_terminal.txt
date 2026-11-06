@@ -5,4 +5,7 @@ pytest --headed
 
 pytest --headed --slowmo 1000
 
+pytest tests/test_add_new_contact.py::test_add_new_contact_positive
+
+pytest tests/test_add_new_contact.py --headed --slowmo 1000
 
